@@ -1,0 +1,87 @@
+
+<!-- svgs fonticons fontvars glassmorphism neuomorphism curves masking radius microanimations vid/aud -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+.cover {
+  background-image: url('C:/Users/Digif/Google Drive/mountain.jpeg');
+  background-size: cover; background-position: center; 
+}
+
+body{background-color: #e1dbdb;padding:0px;margin:0px}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#card{
+    width:25vw;height:25vw;
+    border-radius: 57px;
+    background: linear-gradient(145deg, #f1eaea, #cbc5c5);
+    box-shadow:  19px 19px 37px #a9a4a4,
+    -19px -19px 37px #ffffff;
+}
+
+.flex-container {
+  display: flex; /* or inline-flex */
+  flex-direction: row | row-reverse | column | column-reverse;
+  flex-wrap: nowrap | wrap | wrap-reverse;
+  flex-flow: column wrap;
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+  align-items: stretch | flex-start | flex-end | center | baseline;
+  /* align-content only takes effect on multi-line flexible containers */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 50px repeat(2,1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header header"%
+  "main main . sidebar"
+  "footer footer footer footer";
+
+  column-gap: 10px; row-gap: 10px; /*optional*/
+  justify-items: start | end | center | stretch;
+  align-items: start | end | center | stretch;
+}
+.item-a {grid-area: header;} .item-b {grid-area: main;} .item-c {grid-area: sidebar;} .item-d {grid-area: footer;}
+
+.g {height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  
+  grid-template-areas: 
+  "nav content";
+
+}
+.gi1 {grid-area: nav;background-color: red;} .gi2 {grid-area: content;background-color: blue;} 
+</style>
+
+<body>
+
+<div class="g">
+  <div class="gi1">123</div>
+  <div class="gi2 cover">abc</div>
+</div>
+<!-- <div class="cover">j</div>
+<div class="cover">h</div> -->
+
+<!-- 100vh will always represent the full height of the viewport, while 100% will depend on the height of the parent element. -->
+<!-- Grid provides control over both columns and rows, whereas Flexbox focuses on either the horizontal (main) axis or the vertical (cross) axis. -->
+
+<div class="container" style="height:100vh;">
+<!-- <div style="display:flex;justify-content: space-around;height:100vh;align-items: center;"> -->
+<div id="card" class="centered">123</div>
+<div id="card" class="centered">123e</div>
+<div id="card" class="centered">123e</div>
+<!-- <div id="card" class="centered">123e</div> -->
+</div>
+<!-- </div> -->
+
+</body>
