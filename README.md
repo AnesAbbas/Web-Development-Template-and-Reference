@@ -58,6 +58,7 @@ body { background-color: var(--primary); }
 
 # Colors
 **Reference** https://flatuicolors.com/, https://flatuicolors.com/palette/defo
+**Generator** https://www.realtimecolors.com/?colors=e8f5ec-0b180f-a2d4b3-36316b-ae71be&fonts=Inter-Inter
 
 # Fonts
 **Source** https://fonts.google.com/
@@ -68,6 +69,14 @@ body { background-color: var(--primary); }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body{ font-family:'Roboto'; }
+
+/* 
+rem: Relative to the root element
+em: Relative to the parent element 
+
+  <!-- 100vh will always represent the full height of the viewport, while 100% will depend on the height of the parent element. -->
+  <!-- Grid provides control over both columns and rows, whereas Flexbox focuses on either the horizontal (main) axis or the vertical (cross) axis. Grid for layouts. Flexbox for groupings like icons, cards, etc. -->
+*/
 ```
 
 ```html
