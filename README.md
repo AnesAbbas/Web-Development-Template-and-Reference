@@ -1,4 +1,3 @@
-# Web Development Quick Reference
 
 This repository provides a comprehensive quick reference guide for various web development essentials, including responsive meta tags, favicons, CSS resets, and utility classes. It covers a range of topics such as:
 
