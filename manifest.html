@@ -1,0 +1,94 @@
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>{</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    <span class="st">&quot;name&quot;</span><span class="op">:</span> <span class="st">&quot;Comprehensive PWA&quot;</span><span class="op">,</span>  <span class="co">// Full name of the PWA; displayed when installing the app</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="st">&quot;short_name&quot;</span><span class="op">:</span> <span class="st">&quot;PWA&quot;</span><span class="op">,</span>  <span class="co">// Short name of the PWA; used on the home screen</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>    <span class="st">&quot;start_url&quot;</span><span class="op">:</span> <span class="st">&quot;/&quot;</span><span class="op">,</span>  <span class="co">// URL that the app starts at when launched; typically the root or a specific page like &quot;/index.html&quot;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>    <span class="st">&quot;display&quot;</span><span class="op">:</span> <span class="st">&quot;standalone&quot;</span><span class="op">,</span>  <span class="co">// Display mode of the app. Alternatives:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>                             <span class="co">// - &#39;fullscreen&#39;: Fullscreen mode</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>                             <span class="co">// - &#39;standalone&#39;: App-like appearance without browser UI</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>                             <span class="co">// - &#39;minimal-ui&#39;: Browser UI with minimal controls</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>                             <span class="co">// - &#39;browser&#39;: Regular browser appearance</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>    <span class="st">&quot;background_color&quot;</span><span class="op">:</span> <span class="st">&quot;#ffffff&quot;</span><span class="op">,</span>  <span class="co">// Background color for the splash screen; can be any valid CSS color value</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a>    <span class="st">&quot;theme_color&quot;</span><span class="op">:</span> <span class="st">&quot;#0000ff&quot;</span><span class="op">,</span>  <span class="co">// Theme color for the browser&#39;s address bar; can be any valid CSS color value</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a>    <span class="st">&quot;description&quot;</span><span class="op">:</span> <span class="st">&quot;A comprehensive PWA example to demonstrate manifest capabilities.&quot;</span><span class="op">,</span>  <span class="co">// Description of the PWA</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a>    <span class="st">&quot;orientation&quot;</span><span class="op">:</span> <span class="st">&quot;portrait-primary&quot;</span><span class="op">,</span>  <span class="co">// Default orientation for the app. Alternatives:</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a>                                        <span class="co">// - &#39;any&#39;: Supports all orientations</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a>                                        <span class="co">// - &#39;natural&#39;: Default orientation of the device</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a>                                        <span class="co">// - &#39;landscape&#39;: Landscape mode</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a>                                        <span class="co">// - &#39;landscape-primary&#39;: Primary landscape mode</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a>                                        <span class="co">// - &#39;landscape-secondary&#39;: Secondary landscape mode</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a>                                        <span class="co">// - &#39;portrait&#39;: Portrait mode</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a>                                        <span class="co">// - &#39;portrait-primary&#39;: Primary portrait mode</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a>                                        <span class="co">// - &#39;portrait-secondary&#39;: Secondary portrait mode</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a>    <span class="st">&quot;scope&quot;</span><span class="op">:</span> <span class="st">&quot;/&quot;</span><span class="op">,</span>  <span class="co">// Scope of the app; limits navigation to the specified URL scope</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true"></a>    <span class="st">&quot;lang&quot;</span><span class="op">:</span> <span class="st">&quot;en-US&quot;</span><span class="op">,</span>  <span class="co">// Default language of the app</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true"></a>    <span class="st">&quot;dir&quot;</span><span class="op">:</span> <span class="st">&quot;ltr&quot;</span><span class="op">,</span>  <span class="co">// Text direction of the app. Alternatives:</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true"></a>                   <span class="co">// - &#39;ltr&#39;: Left-to-right</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true"></a>                   <span class="co">// - &#39;rtl&#39;: Right-to-left</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true"></a>    <span class="st">&quot;icons&quot;</span><span class="op">:</span> [</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true"></a>        {</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-48x48.png&quot;</span><span class="op">,</span>  <span class="co">// Path to the icon file</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;48x48&quot;</span><span class="op">,</span>  <span class="co">// Size of the icon</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span>  <span class="co">// MIME type of the icon</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true"></a>        {</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-72x72.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;72x72&quot;</span><span class="op">,</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true"></a>        {</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-96x96.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;96x96&quot;</span><span class="op">,</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true"></a>        {</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-128x128.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;128x128&quot;</span><span class="op">,</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true"></a>        {</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-144x144.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;144x144&quot;</span><span class="op">,</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true"></a>        {</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-152x152.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;152x152&quot;</span><span class="op">,</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true"></a>        {</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-192x192.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;192x192&quot;</span><span class="op">,</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true"></a>        {</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-384x384.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;384x384&quot;</span><span class="op">,</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true"></a>        {</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;images/icon-512x512.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;512x512&quot;</span><span class="op">,</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true"></a>        }</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true"></a>    ]<span class="op">,</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true"></a>    <span class="st">&quot;screenshots&quot;</span><span class="op">:</span> [</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true"></a>        {</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;screenshots/screenshot1.png&quot;</span><span class="op">,</span>  <span class="co">// Path to the screenshot file</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;640x480&quot;</span><span class="op">,</span>  <span class="co">// Size of the screenshot</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span>  <span class="co">// MIME type of the screenshot</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true"></a>        }<span class="op">,</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true"></a>        {</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true"></a>            <span class="st">&quot;src&quot;</span><span class="op">:</span> <span class="st">&quot;screenshots/screenshot2.png&quot;</span><span class="op">,</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true"></a>            <span class="st">&quot;sizes&quot;</span><span class="op">:</span> <span class="st">&quot;1280x720&quot;</span><span class="op">,</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true"></a>            <span class="st">&quot;type&quot;</span><span class="op">:</span> <span class="st">&quot;image/png&quot;</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true"></a>        }</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true"></a>    ]<span class="op">,</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true"></a>    <span class="st">&quot;related_applications&quot;</span><span class="op">:</span> [  <span class="co">// List of related applications</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true"></a>        {</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true"></a>            <span class="st">&quot;platform&quot;</span><span class="op">:</span> <span class="st">&quot;web&quot;</span><span class="op">,</span>  <span class="co">// Platform of the related application (e.g., web, play, windows, ios)</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true"></a>            <span class="st">&quot;url&quot;</span><span class="op">:</span> <span class="st">&quot;https://example.com/related-app&quot;</span><span class="op">,</span>  <span class="co">// URL of the related application</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true"></a>            <span class="st">&quot;id&quot;</span><span class="op">:</span> <span class="st">&quot;com.example.relatedapp&quot;</span>  <span class="co">// ID of the related application (e.g., package name for Android apps)</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true"></a>        }</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true"></a>    ]<span class="op">,</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true"></a>    <span class="st">&quot;prefer_related_applications&quot;</span><span class="op">:</span> <span class="kw">false</span>  <span class="co">// Whether to prefer the related applications over the web app</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true"></a>}</span></code></pre></div>
