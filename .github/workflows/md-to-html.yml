@@ -19,19 +19,24 @@ jobs:
     - name: Set up Pandoc
       run: sudo apt-get install -y pandoc
 
+    - name: Create dist directory
+      run: mkdir -p dist
+
     - name: Convert Markdown to HTML
       run: |
         for file in $(find . -name "*.md"); do
-          html_file="${file%.md}.html"
+          html_file="dist/${file%.md}.html"
+          mkdir -p $(dirname "$html_file")
           pandoc "$file" -o "$html_file"
         done
 
     - name: Commit and push changes
+      env:
+        PAT: ${{ secrets.PAT }}
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add .
+        git remote set-url origin https://x-access-token:${PAT}@github.com/${{ github.repository }}
+        git add dist
         git commit -m "Convert Markdown to HTML"
         git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
