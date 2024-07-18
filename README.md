@@ -21,7 +21,7 @@ This repository provides a comprehensive quick reference guide for various web d
 
 This guide includes practical examples, references to generators and libraries, and links to further reading, making it a valuable resource for web developers looking to streamline their workflow.
 
-<br>  
+<br>
 
 # Responsive Content Tag
 
