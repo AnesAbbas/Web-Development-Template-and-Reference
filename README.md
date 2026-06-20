@@ -552,6 +552,11 @@ clip-path: circle(50% at 50% 50%);
 
 **Reference** https://www.w3schools.com/cssref/css_pr_aspect-ratio.php
 
+<img src="images/aspect-ratios-in-photography-featured.webp"  style="width:100%"/>
+
+<img src="images/video-aspect-ratios_1736533139.jpg"  style="width:100%"/>
+
+
 ### Shadows
 
 **Generator** https://cssgenerator.org/box-shadow-css-generator.html
@@ -600,6 +605,121 @@ html {
 }
 ```
 
+## Site Building Blocks
+
+<img src="images/0_k0z2hmXHu0Sp1hiI.webp"  style="width:100%"/>
+
+Example sections:
+
+- Hero Section
+- Features / Benefits
+- Call-To-Action (CTA)
+- Testimonials / Reviews
+- Success Stories / Case Studies
+- About Us
+- Comparison Section
+- Pricing / Plans
+- FAQ
+- Contact Section
+- Footer
+- How It Works
+- Statistics / Metrics
+- Portfolio / Showcase
+- Team Section
+- Newsletter Signup
+- Blog / Resources
+- Partners / Clients
+- Timeline / Roadmap
+- Gallery / Screenshots
+- Awards / Certifications
+- Trust & Security
+- Product Demo / Interactive Demo
+- Community Section
+- Events Calendar
+- Leaderboards
+- Careers / Opportunities
+- Press / Media Coverage
+- Mission & Vision
+- Sustainability / Impact
+- Feature Highlights
+- Use Cases
+- Industries Served
+- Customer Journey
+- Process Workflow
+- Roadmap & Future Plans
+- Sponsors & Supporters
+- Mentors & Advisors
+- Project Showcase
+- Idea Showcase
+- Featured Products / Services
+- Popular Categories
+- Tutorials & Guides
+- Social Media Feed
+- Podcast Section
+- Video Library
+- Latest News
+- Announcements
+- Upcoming Events
+- Membership Benefits
+- Affiliate Program
+- Referral Program
+- Donation Section
+- Volunteer Opportunities
+- Partner Applications
+- Surveys & Polls
+- Feedback & Suggestions
+- SDG Goals Section
+- Interactive Map
+
+## Agentic Design
+
+- 
+- 
+- 
+- 
+
+- use ref images
+- use ref site urls
+- use hand-drawn sketches
+- generate DESIGN.md from images, sites, etc. and extract/cutomize parts
+-
+
+<img src="images/cf03f9bfe369b1f26ddb5bbf3a23fa37a042d91d-780x560.webp"  style="width:100%"/>
+
+
+### DESIGN.md
+https://stitch.withgoogle.com/docs/design-md/overview
+
+**Specification:** https://stitch.withgoogle.com/docs/design-md/specification  
+**Skill:** https://github.com/google-labs-code/stitch-skills  
+**Collection:**   
+https://getdesign.md/  
+https://github.com/voltagent/awesome-design-md
+
+Agent native, human readable markdown file to define your design language and system, to get better, more consistent output, stop the AI from guessing.
+
+```
+A DESIGN.md file has two layers. The YAML front matter contains machine-readable design tokens — the precise values agents use to enforce consistency. The markdown body provides human-readable design rationale organized into ## sections. Prose may use descriptive color names (e.g., “Midnight Forest Green”) that correspond to systematic token names (e.g., primary). The tokens are the normative values; the prose provides context for how to apply them.
+
+The spec is a foundation, not a prescription.
+```
+
+**Meet DESIGN.md: A new open standard for AI-generated UI** Google for Developers and Google Labs  
+https://www.youtube.com/watch?v=W1gWIQp9k1Y&loop=0
+
+**Your AI UI Looks Generic… This Fixes It (DESIGN.md)** Better Stack
+https://www.youtube.com/watch?v=pY52H5gKhGg&loop=0
+
+**Brands' Design.md Repo:** https://github.com/VoltAgent/awesome-design-md
+
+### Google Stitch
+
+A chatbot for generating UI designs
+
+**Ad:** https://www.youtube.com/watch?v=nuJvDXZ9VVU&loop=0  
+**Tutorial 1:** https://www.youtube.com/watch?v=3FIRNGJh00w&loop=0  
+**Tutorial 2:** https://www.youtube.com/watch?v=8gkFn5Z-IvY&loop=0
+
 
 ## Additional Resources
 
@@ -621,3 +741,35 @@ This version should be more organized and user-friendly, with corrections and ad
 ### Charting
 
 **Reference** [Ref](https://www.highcharts.com/)
+
+
+
+# UI/UX Design Reference
+
+![alt text](images/banner.png)
+
+![alt text](images/logo.png)
+
+## Workflow
+
+Collect inspirations
+Filter inspiration ideas
+Sitemap
+Wireframe
+Styleguide
+Design samples
+Create master layout and component library + documentation
+Implement Design and build product
+
+## Design Lingo
+ 
+Emotion centric UX
+Minimalism
+3D and motion
+Microinteractions
+
+Glassmorphic
+Pnuemorphic
+
+![alt text](<images/ui vs ux.png>)
+

@@ -1,0 +1,87 @@
+<!-- html page with a centered neumorphic clock, off white page background and round purple clock controls below it with white icons -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neumorphic Clock</title>
+	<style>
+		body {
+			background-color: #F7F7F7; /* off-white page background */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		.clock {
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			background-color: #F7F7F7; /* off-white clock background */
+			box-shadow: 10px 10px 30px #D8D8D8, -10px -10px 30px #FFFFFF; /* neumorphic effect */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+		.clock h1 {
+			font-size: 3em;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		.controls {
+			margin-top: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.control {
+			background-color: #6B52AE; /* purple control background */
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 10px;
+		}
+		.control i {
+			font-size: 1.5em;
+			color: #FFF; /* white icon color */
+		}
+	</style>
+</head>
+<body>
+    <!-- <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+        <defs>
+            <clipPath id="blob">
+                <path fill="#474bff" d="M393.5,322Q335,404,230.5,421Q126,438,87,339Q48,240,91.5,149Q135,58,233.5,69Q332,80,392,160Q452,240,393.5,322Z" />
+            </clipPath>
+        </defs>
+        <image x="0" y="0" width="100%" height="100%" clip-path="url(#blob)" xlink:href="https://images.unsplash.com/photo-1535223289827-42f1e9919769?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wzNjMxMDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTAxOTc0NjF8&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" preserveAspectRatio="xMidYMid slice"></image>
+    </svg> -->
+	<div class="clock">
+		<h1>12:00</h1>
+	</div>
+	<div class="controls">
+		<div class="control">
+			<i class="fa fa-arrow-up"></i>
+		</div>
+		<div class="control">
+			<i class="fa fa-play"></i>
+		</div>
+		<div class="control">
+			<i class="fa fa-arrow-down"></i>
+		</div>
+	</div>
+    
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- replace "your-account-id" with your Font Awesome account ID -->
+</body>
+
+</html>
