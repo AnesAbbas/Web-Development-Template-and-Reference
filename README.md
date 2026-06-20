@@ -1,6 +1,4 @@
 
-# CSS Responsive Web Design Principles
-
 ```
 This guide includes quick references to important CSS concepts, generators to speed up development, libraries, and useful links for further reading.
 ```
