@@ -616,8 +616,6 @@ html {
 
 **Reference**: [Bootstrap](https://getbootstrap.com/), [Tailwind CSS](https://tailwindcss.com/)
 
----
-
 This version should be more organized and user-friendly, with corrections and additional helpful content.
 
 ### Charting
